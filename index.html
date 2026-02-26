@@ -136,7 +136,14 @@
                                         Soon</span>
                                 </div>
                             </template>
-                            <div class="icon-box"><i :class="feature.icon"></i></div>
+                            <div class="icon-box">
+                                <template x-if="feature.logo">
+                                    <img :src="feature.logo" alt="Norrix Logo">
+                                </template>
+                                <template x-if="!feature.logo">
+                                    <i :class="feature.icon"></i>
+                                </template>
+                            </div>
                             <h4 x-text="feature.title"></h4>
                             <ul class="list-unstyled small">
                                 <template x-for="item in feature.items">

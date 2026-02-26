@@ -319,6 +319,12 @@ span {
   color: var(--ns-primary);
   margin-bottom: 2rem;
 }
+.icon-box img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  display: block;
+}
 
 /* Workflow Steps & Terminal */
 .workflow-step {

@@ -99,6 +99,7 @@ function featureData() {
         id: 9,
         title: "Cloud Build",
         icon: "fas fa-cloud-upload-alt",
+        logo: "assets/images/icons/norrix.png",
         delay: "delay-2",
         isComingSoon: true,
         items: [
