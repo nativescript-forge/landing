@@ -6,7 +6,7 @@ Just a Landing Page for NativeScript Forge
 
 This repository contains the source code for the official landing page of NativeScript Forge. The website is designed to showcase the features, supported frameworks (flavors), and visual interface of the NativeScript Forge desktop application.
 
-**Live:** [https://ns-forge.netlify.app](https://ns-forge.netlify.app)
+**Live:** [https://nativescript-forge.netlify.app](https://nativescript-forge.netlify.app)
 
 ## 🛠️ Built With
 
