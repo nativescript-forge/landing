@@ -35,4 +35,4 @@ cd landing
 
 ---
 
-Created with ❤️ for Community
+Created with ❤️ for the NativeScript Community
