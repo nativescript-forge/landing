@@ -1,6 +1,6 @@
 # NativeScript Forge Landing Page
 
-A modern, responsive landing page for **NativeScript Forge**—the ultimate visual toolkit for NativeScript developers.
+Just a Landing Page for NativeScript Forge
 
 ## 🚀 Overview
 
