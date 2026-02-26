@@ -82,8 +82,6 @@ function featureData() {
         items: [
           "Multi-OS Support (Win/Mac/Linux)",
           "Emulator & Physical Devices",
-          "Custom Titlebar Controls",
-          "Context-aware UI Layout",
         ],
       },
       {
@@ -95,7 +93,6 @@ function featureData() {
           "Android Gradle Editor",
           "iOS xcconfig Management",
           "Manifest & Plist Visualizer",
-          "Advanced Runtime Flags",
         ],
       },
       {
@@ -106,7 +103,6 @@ function featureData() {
         isComingSoon: true,
         items: [
           "Build Cloud by Norrix.net",
-          "Remote CI/CD Pipeline",
           "Over-the-air Updates",
           "Cloud-based Signing",
         ],
