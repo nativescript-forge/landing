@@ -1,4 +1,6 @@
-# NativeScript Forge Landing Page
+<img src="https://raw.githubusercontent.com/nativescript-forge/landing/fcfa8cd9795cd870d5f4ee5df456bd96ca2b68e3/assets/images/icons/nsf-light-io.svg" height="128" />
+
+# NativeScript Forge [![Netlify Status](https://api.netlify.com/api/v1/badges/86185d94-1aeb-437a-9364-fee32c60ba0f/deploy-status)](https://app.netlify.com/projects/nativescript-forge/deploys)
 
 Just a Landing Page for NativeScript Forge
 
