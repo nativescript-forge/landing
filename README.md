@@ -8,14 +8,6 @@ This repository contains the source code for the official landing page of Native
 
 **Live Demo:** [https://ns-forge.netlify.app](https://ns-forge.netlify.app)
 
-## ✨ Features
-
-- **Responsive Design:** Optimized for mobile, tablet, and desktop views.
-- **Dark & Light Mode:** Seamless theme switching with persistent user preference.
-- **Interactive Showcase:** Visual gallery of the application using SwiperJS and Lightbox2.
-- **Modern UI:** Built with Bootstrap 5 and custom CSS for a clean, professional look.
-- **Fast Performance:** Minimal dependencies and lightweight structure.
-
 ## 🛠️ Built With
 
 - **HTML5 & CSS3:** Structured with modern semantic tags and custom styling.
