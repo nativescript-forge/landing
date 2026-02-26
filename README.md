@@ -41,15 +41,6 @@ cd NS-Forge-landing
 # (Or use a local server like Live Server in VS Code)
 ```
 
-## 🔗 Related Links
-
-- **Main Application:** [NativeScript Forge GitHub](https://github.com/dyazincahya/NS-Forge)
-- **Official Website:** [ns-forge.netlify.app](https://ns-forge.netlify.app)
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details (if applicable).
-
 ---
 
 Created with ❤️ by [Kang Cahya](https://github.com/dyazincahya)
