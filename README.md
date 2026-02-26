@@ -24,10 +24,10 @@ To run this landing page locally, simply clone the repository and open `index.ht
 
 ```bash
 # Clone the repository
-git clone https://github.com/dyazincahya/NS-Forge-landing.git
+git clone https://github.com/nativescript-forge/landing.git
 
 # Navigate to the directory
-cd NS-Forge-landing
+cd landing
 
 # Open index.html
 # (Or use a local server like Live Server in VS Code)
@@ -35,4 +35,4 @@ cd NS-Forge-landing
 
 ---
 
-Created with ❤️ by [Kang Cahya](https://github.com/dyazincahya)
+Created with ❤️ for Community
