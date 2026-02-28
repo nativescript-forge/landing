@@ -198,6 +198,8 @@ function downloadData() {
         icon: "fab fa-windows",
         desc: "Installer for Windows 10/11 (x64)",
         delay: "",
+        link: "https://github.com/nativescript-forge/gui-app/releases",
+        note: "Alpha Version - Help us testing!",
       },
       {
         id: "macos",

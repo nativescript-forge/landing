@@ -359,22 +359,55 @@ span {
 /* Download Section */
 .download-card {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 3.5rem 2rem;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.download-card i {
-  font-size: 3rem;
+.download-card > i {
+  font-size: 3.5rem;
   margin-bottom: 1.5rem;
   color: var(--ns-primary);
+  display: block;
 }
 
 .download-card h5 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.download-card .btn-primary {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0.8rem 2rem;
+}
+
+.download-card .btn-primary i {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: inherit;
 }
 
 .download-card p.text-muted {
   color: var(--text-muted) !important;
+}
+
+.alpha-note {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ns-primary);
+  background: rgba(var(--ns-primary-rgb), 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  display: inline-block;
 }
 
 .coming-soon-badge {
@@ -695,15 +728,29 @@ span {
     padding: 1.5rem 1rem;
     border-radius: 20px;
   }
-  .download-card i {
-    font-size: 2rem;
+  .download-card > i {
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+    display: block;
   }
+
   .download-card h5 {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
   }
+
   .download-card p {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     margin-bottom: 1rem !important;
+  }
+
+  .download-card .btn-primary {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .download-card .btn-primary i {
+    font-size: 0.9rem;
+    margin-bottom: 0;
   }
 }
