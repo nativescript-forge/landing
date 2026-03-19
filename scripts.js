@@ -207,6 +207,8 @@ function downloadData() {
         icon: "fab fa-apple",
         desc: "Apple Silicon & Intel (DMG)",
         delay: "delay-1",
+        link: "https://github.com/nativescript-forge/gui-app/releases",
+        note: "Alpha Version - Help us testing!",
       },
       {
         id: "linux",
@@ -214,6 +216,8 @@ function downloadData() {
         icon: "fab fa-linux",
         desc: "AppImage & Deb for Linux distros",
         delay: "delay-2",
+        link: "https://github.com/nativescript-forge/gui-app/releases",
+        note: "Alpha Version - Help us testing!",
       },
     ],
   };
