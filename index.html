@@ -66,7 +66,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link px-3" href="#features">Features</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown animate-fade-in" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#gui"><i class="fas fa-desktop me-2"></i>GUI App</a></li>
+                            <li><a class="dropdown-item" href="#cli"><i class="fas fa-terminal me-2"></i>CLI
+                                </a></li>
+                            <li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link px-3" href="#flavors">Flavors</a></li>
                     <li class="nav-item"><a class="nav-link px-3" href="#screenshots">Showcase</a></li>
                     <li class="nav-item"><a class="nav-link px-3" href="#download">Download</a></li>
@@ -98,12 +109,14 @@
                             Workflow</span>
                     </h1>
                     <p class="lead mb-5 fade-in-up delay-1">
-                        Visual toolkit for NativeScript developers. Manage projects, configure platforms, and accelerate
-                        your development cycle with a beautiful, unified interface.
+                        Powerful Visual and Interactive toolkit for NativeScript developers. Streamline your workflow
+                        with our GUI App and CLI, designed to simplify project management and accelerate your
+                        development cycle.
                     </p>
                     <div
                         class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start fade-in-up delay-2">
-                        <a href="#features" class="btn btn-primary">Explore Features</a>
+                        <a href="#gui" class="btn btn-primary">GUI Features</a>
+                        <a href="#cli" class="btn glass-btn">CLI Features</a>
                         <a href="#download" class="btn glass-btn">Download</a>
                     </div>
                 </div>
@@ -118,8 +131,8 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="bg-dark-deep">
+    <!-- GUI Features Section -->
+    <section id="gui" class="bg-dark-deep">
         <div class="container">
             <div class="text-center mb-5 pb-5 fade-in-up">
                 <h6 class="text-primary text-uppercase tracking-widest fw-bold mb-3">Core Capabilities</h6>
@@ -153,6 +166,59 @@
                         </div>
                     </div>
                 </template>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLI Section -->
+    <section id="cli" class="bg-darker">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 fade-in-up">
+                    <h6 class="text-primary text-uppercase tracking-widest fw-bold mb-3">Command Line Interface</h6>
+                    <h2 class="display-4 fw-bold mb-4">Powerful CLI for Power Users</h2>
+                    <p class="lead mb-5">
+                        NativeScript Forge CLI (<code class="text-primary">nsf</code>) is an opinionated interactive
+                        wrapper around the standard NativeScript CLI. It streamlines your workflow with a beautiful
+                        and intuitive interface.
+                    </p>
+                    <div class="terminal-mockup mb-4">
+                        <div class="terminal-header">
+                            <span style="width: 12px; height: 12px; background: #ff5f56; border-radius: 50%;"></span>
+                            <span style="width: 12px; height: 12px; background: #ffbd2e; border-radius: 50%;"></span>
+                            <span style="width: 12px; height: 12px; background: #27c93f; border-radius: 50%;"></span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="mb-2"><span class="text-success">$</span> npm install -g @nativescript-forge/cli
+                            </div>
+                            <div class="mb-2"><span class="text-success">$</span> nsf menu</div>
+                            <div class="text-muted"># Opens the interactive main menu</div>
+                        </div>
+                    </div>
+                    <div class="fade-in-up delay-2">
+                        <a href="https://github.com/nativescript-forge/cli/blob/main/COMMANDS.md" target="_blank"
+                            class="btn btn-primary rounded-pill">
+                            <i class="fas fa-book-open me-2"></i>View Full Documentation
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4" x-data="cliData()">
+                        <template x-for="command in commands" :key="command.id">
+                            <div class="col-sm-6 fade-in-up">
+                                <div class="glass-card p-4 h-100">
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="step-num" style="width: 36px; height: 36px; min-width: 36px;">
+                                            <i :class="command.icon" style="font-size: 0.9rem;"></i>
+                                        </div>
+                                        <h6 class="mb-0 fw-bold" x-text="command.name"></h6>
+                                    </div>
+                                    <p class="small mb-0" x-text="command.desc"></p>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -241,7 +307,7 @@
             </div>
             <div class="row g-4 justify-content-center" x-data="downloadData()">
                 <template x-for="platform in platforms" :key="platform.id">
-                    <div class="col-md-4 fade-in-up" :class="platform.delay">
+                    <div class="col-lg-3 col-md-6 fade-in-up" :class="platform.delay">
                         <div class="glass-card download-card">
                             <i :class="platform.icon"></i>
                             <h5 x-text="platform.name"></h5>
@@ -253,7 +319,8 @@
                             </template>
                             <template x-if="platform.link">
                                 <a :href="platform.link" target="_blank" class="btn btn-primary rounded-pill">
-                                    <i class="fas fa-download"></i>Download
+                                    <i :class="platform.id === 'cli' ? 'fab fa-npm' : 'fas fa-download'"></i>
+                                    <span x-text="platform.id === 'cli' ? 'View on NPM' : 'Download'"></span>
                                 </a>
                             </template>
                             <template x-if="!platform.link">

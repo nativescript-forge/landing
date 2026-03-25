@@ -112,6 +112,61 @@ function featureData() {
   };
 }
 
+function cliData() {
+  return {
+    commands: [
+      {
+        id: "menu",
+        name: "nsf menu",
+        desc: "Interactive main menu for all NativeScript Forge commands.",
+        icon: "fas fa-bars",
+      },
+      {
+        id: "create",
+        name: "nsf create",
+        desc: "Guided process to create a new project with various flavors.",
+        icon: "fas fa-plus-circle",
+      },
+      {
+        id: "build",
+        name: "nsf build",
+        desc: "Build Android projects with optimized PRODUCTION or DEVELOPMENT presets (iOS coming soon).",
+        icon: "fas fa-hammer",
+      },
+      {
+        id: "resources",
+        name: "nsf resources",
+        desc: "Interactively generate icons and splash screens.",
+        icon: "fas fa-image",
+      },
+      {
+        id: "plugin",
+        name: "nsf plugin",
+        desc: "Manage and develop NativeScript plugins interactively.",
+        icon: "fas fa-plug",
+      },
+      {
+        id: "proxy",
+        name: "nsf proxy",
+        desc: "Configure or clear proxy settings for the NativeScript CLI.",
+        icon: "fas fa-shield-alt",
+      },
+      {
+        id: "doctor",
+        name: "nsf doctor",
+        desc: "Check your environment for potential NativeScript issues.",
+        icon: "fas fa-user-md",
+      },
+      {
+        id: "info",
+        name: "nsf info",
+        desc: "Quickly view details about your current environment.",
+        icon: "fas fa-info-circle",
+      },
+    ],
+  };
+}
+
 function showcaseData() {
   return {
     tabs: [
@@ -218,6 +273,15 @@ function downloadData() {
         delay: "delay-2",
         link: "https://github.com/nativescript-forge/gui-app/releases",
         note: "Alpha Version - Help us testing!",
+      },
+      {
+        id: "cli",
+        name: "Forge CLI",
+        icon: "fas fa-terminal",
+        desc: "Global installation via NPM",
+        delay: "delay-3",
+        link: "https://www.npmjs.com/package/@nativescript-forge/cli",
+        note: "Interactive & Guided CLI",
       },
     ],
   };
